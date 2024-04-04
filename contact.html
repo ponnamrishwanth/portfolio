@@ -1,0 +1,224 @@
+{% include "header.html" %}
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animation {
+    animation: fadeIn 1s ease-in-out;
+}
+
+  @keyframes changeColor {
+    0% { background-color: #31363F; }
+    25% { background-color: #FF5733; }
+    50% { background-color: #344955; }
+    75% { background-color: #C70039; }
+    100% { background-color: #27AE60; }
+}
+
+
+  .ddd {
+    font-family: Arial, sans-serif;
+    background-color: #31363F;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: changeColor 8s infinite;
+  }
+
+  .contactForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+  }
+
+  .oo {
+    text-align: center;
+    color: #333;
+  }
+
+  .name{
+    font-weight: bold;
+    color: #555;
+  }
+
+  .text,
+  .email,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+
+  .success {
+    color: green;
+    font-size: 14px;
+  }
+
+</style>
+<div class="animation  " >
+<section class="ddd" >
+<form id="contactForm" class="contactForm" method="post">
+  <h2 class="oo">Contact Me</h2>
+  <div >
+    <label for="name" class="name">Name:</label><br>
+    <input type="text" id="name"  class="text" name="name" required>
+    <span id="nameError" class="error"></span>
+  </div>
+  <div>
+    <label for="email" class="name">>Email:</label><br>
+    <input type="email" id="email"  class="email" name="email" required>
+    <span id="emailError" class="error"></span>
+  </div>
+  <div>
+    <label for="message" class="name">>Message:</label><br>
+    <textarea id="message" name="message" rows="4" class="textarea" required></textarea>
+    <span id="messageError" class="error"></span>
+  </div>
+  <button type="submit" class="button">Send</button>
+  <span id="notification" class="success" style="display: none;"></span>
+</form>
+
+
+</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% include "footer.html" %}

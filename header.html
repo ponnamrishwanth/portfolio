@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponnam Rishwanth</title>
+    <link href="/static/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Define keyframes for animation */
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Apply animation to text */
+        .text-animation {
+            animation: slideInFromLeft 1s ease-in-out;
+        }
+
+      @keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.img-animation {
+    animation: slideInRight 1s ease-in-out;
+}
+
+
+
+
+
+
+
+        body {
+            background-color: #C0C0C0;
+        }
+ center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        /* Define keyframes for animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         @keyframes fadeInSkills {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Apply animation to .skills */
+    .skills {
+        flex-basis: 23%;
+        margin: 0 10px;
+        animation: fadeInSkills 1s ease-in-out;
+    }
+
+  @keyframes changeColor {
+    0% { background: linear-gradient(45deg, #31363F, #FF5733); }
+    25% { background: linear-gradient(45deg, #FF5733, #344955); }
+    50% { background: linear-gradient(45deg, #344955, #C70039); }
+    75% { background: linear-gradient(45deg, #C70039, #27AE60); }
+    100% { background: linear-gradient(45deg, #27AE60, #31363F); }
+}
+
+.first-block {
+    background: linear-gradient(45deg, #31363F, #FF5733);
+    color: white;
+    animation: changeColor 5s infinite; /* Adjust the duration and iteration as per your requirement */
+}
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content:
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+.social-list li:last-child {
+    margin-right:10  ; /* Remove margin from the last icon */
+}
+
+.social-list i {
+    font-size: 24px; /* Adjust the font size of the icons */
+
+    </style>
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="/"  >
+      <img src="/static/code3.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> RISHI
+    </a>
+      <ul class="nav justify-content-end">
+    <li>
+        <a class="nav-link" aria-current="page" href="/" style="font-family: Georgia, serif;">HOME</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/aboutme" style="font-family: Georgia, serif;">ABOUT ME</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/projects" style="font-family: Georgia, serif;"> PROJECTS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/contact"> SAY HELLO</a>
+    </li>
+</ul>
+  </div>
+</nav>
+</head>
